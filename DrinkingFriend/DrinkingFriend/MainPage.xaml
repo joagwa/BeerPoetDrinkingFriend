@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DrinkingFriend"
+             x:Class="DrinkingFriend.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Entry x:Name="AlcoholContentEntry" Keyboard="Numeric" HorizontalOptions="FillAndExpand"/>
+            <TimePicker x:Name="DrinkTimeDatePicker" HorizontalOptions="StartAndExpand"/>
+        </StackLayout>
+        <Button Text="Add Drink" Clicked="Button_Clicked" />
+        <ListView x:Name="DrinksList"/>
+        <Button Text="Calculate" Clicked="Button_Clicked_1"/>
+        <Label x:Name="DrunkLevelLabel" FontSize="Large"/>
+    </StackLayout>
+
+</ContentPage>
